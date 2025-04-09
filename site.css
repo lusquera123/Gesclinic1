@@ -306,4 +306,13 @@ footer {
     .footer-links {
         justify-content: center;
     }
+    .footer-instagram {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .footer-instagram:hover {
+        color: var(--secondary-color);
+    }
 }
