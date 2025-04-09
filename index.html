@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gesclinic - Gestão em Saúde</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">)
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
@@ -29,53 +30,38 @@
             <a href="#contato" class="btn-primary">Fale Conosco</a>
         </section>
 
-        <section id="servicos">
+        <section id="servicos" class="servicos">
             <h2>Nossos Serviços</h2>
             <div class="servicos-grid">
                 <div class="servico">
                     <h3>Honorários Médicos</h3>
-                    <p>Gestão e controle eficiente de honorários médicos, garantindo transparência e organização.</p>
+                    <p>Gestão completa de honorários e faturamento</p>
                 </div>
                 <div class="servico">
                     <h3>Consultoria Financeira</h3>
-                    <p>Análise e planejamento financeiro personalizado para sua clínica ou consultório.</p>
-                </div>
-                <div class="servico">
-                    <h3>Contabilidade</h3>
-                    <p>Serviços contábeis especializados para o setor de saúde.</p>
+                    <p>Análise e planejamento financeiro especializado</p>
                 </div>
                 <div class="servico">
                     <h3>Controladoria</h3>
-                    <p>Gestão estratégica e controle operacional para otimizar resultados.</p>
-                </div>
-                <div class="servico">
-                    <h3>Controladoria Financeira</h3>
-                    <p>Monitoramento e gestão completa dos recursos financeiros.</p>
-                </div>
-                <div class="servico">
-                    <h3>Integração de Sistemas</h3>
-                    <p>Soluções tecnológicas integradas para maior eficiência operacional.</p>
+                    <p>Controle e otimização de processos</p>
                 </div>
             </div>
         </section>
 
         <section id="sobre" class="sobre">
-            <h2>Sobre Nós</h2>
-            <div class="sobre-content">
-                <p>A Gesclinic é especialista em gestão de saúde, oferecendo soluções completas para clínicas, consultórios e profissionais da área médica. Nossa missão é otimizar processos e maximizar resultados.</p>
-                <div class="diferenciais">
-                    <div class="diferencial">
-                        <h4>Experiência</h4>
-                        <p>Anos de expertise no setor de saúde</p>
-                    </div>
-                    <div class="diferencial">
-                        <h4>Qualidade</h4>
-                        <p>Excelência em todos os serviços</p>
-                    </div>
-                    <div class="diferencial">
-                        <h4>Inovação</h4>
-                        <p>Soluções tecnológicas modernas</p>
-                    </div>
+            <h2>Por que nos Escolher?</h2>
+            <div class="diferenciais">
+                <div class="diferencial">
+                    <h4>Experiência</h4>
+                    <p>Anos de atuação no mercado</p>
+                </div>
+                <div class="diferencial">
+                    <h4>Qualidade</h4>
+                    <p>Excelência em todos os serviços</p>
+                </div>
+                <div class="diferencial">
+                    <h4>Inovação</h4>
+                    <p>Soluções tecnológicas modernas</p>
                 </div>
             </div>
         </section>
@@ -83,30 +69,82 @@
         <section id="contato" class="contato">
             <h2>Entre em Contato</h2>
             <div class="contato-container">
-                <form action="https://formsubmit.co/lucaspicagevicz7@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://gesclinic.netlify.app/obrigado.html">
-                    
-                    <div class="form-group">
-                        <input type="text" name="nome" placeholder="Nome" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-primary">Enviar</button>
-                </form>
-                
                 <div class="contato-info">
-                    <h3>Informações de Contato</h3>
-                    <p>Email: contato@gesclinic.com</p>
-                    <p>Telefone: (XX) XXXX-XXXX</p>
-                    <p>Endereço: teste </p>
+                    <h3>Fale Conosco</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(XX) XXXX-XXXX</p>
+                            <p>(XX) XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@gesclinic.com</p>
+                            <p>comercial@gesclinic.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Exemplo, 123 - Sala 45</p>
+                            <p>Centro - Cascavel/PR</p>
+                            <p>CEP: 80000-000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 08h às 18h</p>
+                            <p>Sábado: 08h às 12h</p>
+                        </div>
+                    </div>
                 </div>
+
+                <form action="https://formsubmit.co/lucaspicagevicz7@gmail.com" method="POST" class="contato-form">
+                    <input type="hidden" name="_next" value="[https://gesclinic.netlify.app/obrigado.html">](https://gesclinic.netlify.app/obrigado.html">)
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione...</option>
+                                <option value="honorarios">Honorários Médicos</option>
+                                <option value="consultoria">Consultoria Financeira</option>
+                                <option value="controladoria">Controladoria</option>
+                                <option value="outro">Outro Assunto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
             </div>
         </section>
     </main>
