@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #1B3B6B;    /* Azul escuro da logo */
+    --secondary-color: #48A23F;  /* Verde da logo */
+    --light-bg: #F5F5F5;        /* Fundo claro */
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +18,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
@@ -42,12 +49,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
     font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
 }
 
 .banner {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('banner.jpg');
+    background: linear-gradient(rgba(27, 59, 107, 0.9), rgba(27, 59, 107, 0.9)), url('banner.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -56,7 +68,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 0 20px;
 }
 
@@ -71,8 +83,8 @@ nav ul li a {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--white);
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -83,12 +95,12 @@ nav ul li a {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color);
 }
 
 .servicos {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
 }
 
 .servicos h2 {
@@ -105,7 +117,7 @@ nav ul li a {
 }
 
 .servico {
-    background-color: white;
+    background-color: var(--white);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -136,7 +148,7 @@ nav ul li a {
 
 .contato {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--light-bg);
 }
 
 .contato h2 {
@@ -153,7 +165,7 @@ nav ul li a {
 }
 
 .contato-info {
-    background-color: white;
+    background-color: var(--white);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -167,14 +179,14 @@ nav ul li a {
 
 .info-item i {
     font-size: 24px;
-    color: #007bff;
+    color: var(--secondary-color);
     margin-right: 20px;
     margin-top: 5px;
 }
 
 .info-item h4 {
     margin: 0 0 10px 0;
-    color: #333;
+    color: var(--primary-color);
 }
 
 .info-item p {
@@ -183,7 +195,7 @@ nav ul li a {
 }
 
 .contato-form {
-    background-color: white;
+    background-color: var(--white);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -203,7 +215,7 @@ nav ul li a {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -225,14 +237,14 @@ nav ul li a {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #007bff;
+    border-color: var(--secondary-color);
     outline: none;
-    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    box-shadow: 0 0 5px rgba(72, 162, 63, 0.3);
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     padding: 50px 20px 20px;
 }
 
@@ -251,7 +263,7 @@ footer {
 }
 
 .footer-links a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
