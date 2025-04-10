@@ -6,6 +6,20 @@
     <meta name="robots" content="noindex">
     <title>Obrigado - Gesclinic</title>
     <link rel="stylesheet" href="site.css">
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+        
+        // Carregar tema salvo
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        </script>
 </head>
 <body>
     <header>
@@ -13,6 +27,9 @@
             <div class="logo">
                 <img src="logo.png" alt="Gesclinic Logo">
             </div>
+            <button onclick="toggleTheme()" class="theme-toggle">
+                Alternar Tema
+            </button>
         </nav>
     </header>
 

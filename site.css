@@ -7,12 +7,24 @@
     --spacing-unit: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #ffffff;
-        --light-bg: #1a1a1a;
-        --white: #2a2a2a;
-    }
+[data-theme="dark"] {
+    --text-color: #ffffff;
+    --light-bg: #1a1a1a;
+    --white: #2a2a2a;
+}
+.theme-toggle {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--primary-color);
+    color: var(--white);
 }
 
 * {
