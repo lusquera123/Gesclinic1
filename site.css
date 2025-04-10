@@ -51,7 +51,6 @@ nav ul {
 }
 
 nav ul li a {
-    
     color: var(--primary-color);
     font-weight: 500;
     transition: color 0.3s;
@@ -69,6 +68,10 @@ nav ul li a {
     color: var(--white);
     text-align: center;
     padding: 8rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner h1 {
@@ -143,11 +146,15 @@ input, textarea {
     border-radius: 5px;
     font-family: inherit;
 }
+
 footer {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 2rem;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -194,6 +201,7 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+    padding: lazy;
 }
 
 :focus {
