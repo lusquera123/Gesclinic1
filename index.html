@@ -4,21 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gesclinic - Gestão em Saúde</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="site.css">
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"](https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap") rel="stylesheet">
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-        
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    </script>
 </head>
 <body>
     <header>
@@ -27,19 +15,16 @@
                 <img src="logo.png" alt="Gesclinic">
             </div>
             <ul>
-                <li><a href="#inicio">Início</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <button onclick="toggleTheme()" class="theme-toggle">
-                Alternar Tema
-            </button>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="banner">
+        <section id="home" class="banner">
             <h1>Soluções Completas em Gestão de Saúde</h1>
             <p>Especialistas em honorários médicos, consultoria financeira e controladoria</p>
             <a href="#contato" class="btn-primary">Fale Conosco</a>
