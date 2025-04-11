@@ -57,7 +57,13 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--secondary-color);
 }
+.nav-links {
+    display: none;
+}
 
+.nav-links.active {
+    display: flex;
+}
 .banner {
     background: linear-gradient(rgba(27, 59, 107, 0.9), rgba(27, 59, 107, 0.9)), url('banner.jpg');
     background-size: cover;
